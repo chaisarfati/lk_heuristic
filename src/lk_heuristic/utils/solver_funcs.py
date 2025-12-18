@@ -164,3 +164,4 @@ def solve(tsp_file=None, solution_method=None, runs=1, backtracking=(5, 5), redu
     # execute the export
     logger.info(f"Exporting '{os.path.basename(export_file)}' file to solutions folder")
     export_tsp_file(export_file, tsp_header, best_tour, tour_type)
+    return best_tour, best_cost
